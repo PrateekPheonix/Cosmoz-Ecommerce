@@ -38,5 +38,5 @@ Access the web app at http://localhost:3000/
 
 ### Admin Credentials
 
-Email : admin@gmail.com \\
+Email : admin@gmail.com <br/>
 Pass : admin123
