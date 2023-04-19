@@ -30,7 +30,7 @@ const CategoryList = () => {
   return (
     <div className={`${data.categoryListDropdown ? "" : "hidden"} my-4`}>
       <hr />
-      <div className="py-1 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+      <div className="py-1 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6">
         {categories && categories.length > 0 ? (
           categories.map((item, index) => {
             return (
@@ -108,8 +108,8 @@ const FilterList = () => {
         <div className="flex justify-between items-center">
           <div className="flex flex-col space-y-2  w-2/3 lg:w-2/4">
             <label htmlFor="points" className="text-sm">
-              Price (between 0 and 10$):{" "}
-              <span className="font-semibold text-yellow-700">{range}.00$</span>{" "}
+              Price (between 0 and 10000₹):{" "}
+              <span className="font-semibold text-yellow-700">{range}.00₹</span>{" "}
             </label>
             <input
               value={range}
@@ -117,8 +117,8 @@ const FilterList = () => {
               type="range"
               id="points"
               min="0"
-              max="1000"
-              step="10"
+              max="10000"
+              step="100"
               onChange={(e) => rangeHandle(e)}
             />
           </div>
@@ -183,9 +183,8 @@ const Search = () => {
 
   return (
     <div
-      className={`${
-        data.searchDropdown ? "" : "hidden"
-      } my-4 flex items-center justify-between`}
+      className={`${data.searchDropdown ? "" : "hidden"
+        } my-4 flex items-center justify-between`}
     >
       <input
         value={search}

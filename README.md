@@ -40,3 +40,9 @@ Access the web app at http://localhost:3000/
 
 Email : admin@gmail.com <br/>
 Pass : admin123
+
+### Test Credit Card Credentials
+
+4012888888881881 - Visa <br/>
+2223000048400011 - Mastercard <br/>
+6221261111117766 - UnionPay

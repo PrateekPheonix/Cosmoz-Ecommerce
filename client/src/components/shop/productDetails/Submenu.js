@@ -14,13 +14,13 @@ const Submenu = (props) => {
               className="hover:text-yellow-700 cursor-pointer"
               onClick={(e) => history.push("/")}
             >
-              Shop
+              Shop &gt;
             </span>
             <span
               className="hover:text-yellow-700 cursor-pointer"
               onClick={(e) => history.push(`/products/category/${categoryId}`)}
             >
-              {category}
+              {category} &gt;
             </span>
             <span className="text-yellow-700 cursor-default">{product}</span>
           </div>
